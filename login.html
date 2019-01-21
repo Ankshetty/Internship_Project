@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login Form </title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style_login.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+            <form action="index.html" method="post">
+                
+                <div class="inner_container">
+                    <button class="logout_button" type="submit">Home</button>	
+                </div>
+            </form>
+
+	
+			<div class="login-box">
+                <img src="images/avatar1.png" class="avatar">
+                <h1>Login Here</h1>
+			
+		        <form action="login.html" method="post">
+
+                <label><b>Login as</b></label>
+
+                <select class="select-who">
+                    <option name="as-user">User</option>
+                    <option name="as-retailer">Retailer</option>
+                </select>
+		
+			
+				<label><b>Email</b></label>
+				<input type="email" placeholder="Enter Email" name="user-email" required>
+				<label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="user-password" required>
+                
+				<button class="login_button" name="login" type="submit">Login</button>
+				
+				<br/>
+				<br/>
+
+				<a href="register_user.html"> Register as User.</a> or 
+				<a href="register_retailer.html"> Register as Retailer.</a>
+			
+			
+
+
+		         </form>
+            </div>
+
+		
+	
+</body>
+</html>

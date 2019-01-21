@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cart Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style_cart.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="main.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <nav  class="nav-header">
+            
+                <img src="images/logo1.jpg" class="img-logo"/>
+                
+
+                <div class="toggle mobile-icon" onclick="slideshow()">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
+
+
+                <ul class="nav-ul" id="check-class">
+                        <li><a href="index.html"><strong>HOME</strong></a></li>
+                      
+                     
+                        <li><a href="about.html"><strong>ABOUT US</strong></a></li>
+                        <li><a href="contact.html"><strong>CONTACT US</strong></a></li>
+                        <li><a href="login.html"><strong>LOGOUT</strong></a></li>
+                       
+                     
+                </ul>
+        </nav>
+
+    
+    </header>
+
+
+
+
+    <main>
+       
+       
+
+
+
+    <section class="main-content col-md-12 col-xs-12">
+
+
+        <div class="title">
+            MY CART
+        </div> 
+
+        <div class="main">
+            <div class="widget col-md-12">
+                    
+                    <div class="chart chart-border col-md-3 col-xs-3"> 
+                        <img class="cart-img" src="images/mob1.jpeg"/>
+
+
+                        
+
+                    </div>
+                    <div class="chart chart-border col-md-6 col-xs-6"> 
+                        
+                        <p class="price"> &#8377;14,999</p>
+                        <p class="product-name"> Asus ZenFone Max Pro M2 (Blue, 64 GB)  (4 GB RAM)</p>
+                        <p class="product-desc">If you’re looking for a smartphone that’s robust and powerful, both, inside and outside,
+                            then your search ends here. Meet the ZenFone Max Pro M2 - the smartphone that comes loaded 
+                            with innovative features, such as a Snapdragon 660 processor, a 5-magnet NXP speaker and Corning 
+                           Gorilla Glass 6 protection, to make your mobile experience all the more seamless and secure
+                        </p>
+                        <div id="box-cart">
+                            <span class="tick"><i class="fa fa-check" aria-hidden="true"></i></span>
+                            <h2>Removed from  Cart</h2>
+                            <div>
+                            <a class="close" onclick="pop()">Close</a>
+                             </div>
+                       </div>
+
+                    </div>
+                    <div class="chart col-md-3 col-xs-3"> 
+
+                        <div class="div-buy">
+                            <a class="btn-buy" href="#">Buy Now</a>
+                        </div>
+
+                        <div class="div-cart">
+                            <a class="btn-cart" onclick="pop()" href="#">Remove from Cart</a>
+                        </div>
+    
+    
+                       
+                        
+                    </div>
+
+
+
+
+
+
+            </div>
+          
+          
+        </div>
+    </section>
+
+
+
+
+
+
+    </main>
+    
+    <footer>
+
+
+
+            <div class="footer">
+                    <div class="contain">
+                    <div class="col">
+                      <h4>Company</h1>
+                      <ul>
+                        <li>About</li>
+                        <li>Mission</li>
+                        <li>Services</li>
+                        <li>Social</li>
+                        <li>Get in touch</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h4>Products</h1>
+                      <ul>
+                        <li>About</li>
+                        <li>Mission</li>
+                        <li>Services</li>
+                        <li>Social</li>
+                        <li>Get in touch</li>
+                      </ul>
+                    </div>
+                    
+                   
+                    <div class="col">
+                      <h4>Support</h1>
+                      <ul>
+                        <li>Contact us</li>
+                        <li>Web chat</li>
+                        <li>Open ticket</li>
+                      </ul>
+                    </div>
+                    <div class="col social">
+                      <h4>Social</h1>
+                      <ul>
+                        <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+                        <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+                        <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+                      </ul>
+                    </div>
+                  <div class="clearfix"></div>
+                
+                
+                
+                  
+                
+                
+                
+                
+                
+                  </div>
+                
+                
+                
+                
+                
+                  </div>
+
+
+    </footer>
+
+
+
+
+
+    	<script type="text/javascript">
+		
+    var c=0;
+            function pop(){
+                if(c==0){
+                    document.getElementById("box-cart").style.display="block";
+                    c=1;
+
+                }
+                else{
+                    document.getElementById("box-cart").style.display="none";
+                    c=0;
+                }
+            }
+            
+         
+	</script>
+ 
+</body>
+</html>
